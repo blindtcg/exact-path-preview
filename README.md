@@ -7,9 +7,13 @@ Features
 Core Functionality
 
 100% Accurate Pathfinding - Uses OSRS's Breadth-First Search algorithm with exact tile checking order
+
 Real-time Path Updates - Updates every game tick based on hovered tile
+
 Checkpoint Mode - Option to show only the 25 checkpoint tiles (corners) that OSRS uses internally
+
 Fallback Path Support - Shows path to nearest reachable tile when exact destination is blocked
+
 Collision Detection - Full support for walls, objects, diagonal blocking, and directional movement
 
 Customization Options
