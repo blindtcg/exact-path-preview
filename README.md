@@ -1,6 +1,9 @@
 Exact Path Preview Plugin for RuneLite - by dinked it (blindly/blindtcg)
-A production-ready RuneLite plugin that displays the exact path your character will take when hovering over a tile, using OSRS's actual pathfinding algorithm.
+
+A RuneLite plugin that displays the exact path your character will take when hovering over a tile, using OSRS's actual pathfinding algorithm.
+
 Features
+
 Core Functionality
 
 100% Accurate Pathfinding - Uses OSRS's Breadth-First Search algorithm with exact tile checking order
@@ -10,6 +13,7 @@ Fallback Path Support - Shows path to nearest reachable tile when exact destinat
 Collision Detection - Full support for walls, objects, diagonal blocking, and directional movement
 
 Customization Options
+
 General Settings
 
 Enable/disable plugin on the fly
@@ -82,8 +86,11 @@ com/exactpathpreview/
 ├── ExactPathPreviewConfig.java        # Configuration interface
 ├── ExactPathPreviewOverlay.java       # Path rendering overlay
 └── ExactPathPreviewInfoOverlay.java   # Information panel overlay
+
 How It Works
+
 OSRS Pathfinding Algorithm
+
 This plugin implements the exact pathfinding algorithm used by Old School RuneScape:
 
 Breadth-First Search (BFS) - Not A* or Dijkstra
@@ -102,12 +109,14 @@ Minimal impact on game performance
 Optimized collision data caching
 
 Configuration Examples
+
 Minimal Setup (Clean Look)
 - Fill Tiles: ON
 - Path Color: Cyan with 60 alpha
 - Draw Borders: OFF
 - Highlight Destination: ON
 - Show Path Info: OFF
+
 Maximum Visibility
 - Fill Tiles: ON
 - Path Fade Effect: ON
@@ -115,18 +124,23 @@ Maximum Visibility
 - Border Style: SOLID
 - Pulse Destination: ON
 - Show Path Info: ON
+
 Performance Mode
 - Anti-Aliasing: OFF
 - Max Path Length: 100
 - Show Checkpoints Only: ON
 - Fill Tiles: OFF (borders only)
+
 Debug Mode
 - Debug Mode: ON
 - Show Calculation Time: ON
 - Show Path Info: ON
 - Show Distance: ON
+
 Technical Details
+
 Collision Detection
+
 The plugin reads collision data directly from the client's collision maps and checks:
 
 Full tile blocking (impassable objects)
