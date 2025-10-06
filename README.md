@@ -1,6 +1,6 @@
 Exact Path Preview Plugin for RuneLite - by dinked it (blindly/blindtcg)
 
-A RuneLite plugin that displays the exact path your character will take when hovering over a tile, using OSRS's actual pathfinding algorithm.
+A RuneLite plugin that displays the exact path your character will take when hovering over a tile, using breadth-first search, a pathfinding algorithm utilized by OSRS.
 
 Features
 
@@ -176,6 +176,7 @@ NPCs - Doesn't account for NPC blocking (matches OSRS behavior)
 Very Long Paths - Paths exceeding max display length are truncated for performance
 
 Troubleshooting
+
 Path Not Showing
 
 Ensure plugin is enabled in config
